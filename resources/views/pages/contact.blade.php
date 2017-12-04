@@ -2,7 +2,9 @@
 @section('title')
 <title>{{$title}}</title>
 @endsection
+@section('css')
 <link href="{{ asset('css/parsley.css') }}" rel="stylesheet">
+    @endsection
 @section('content')
     <div class=row>
         <div class="col-md-6">
