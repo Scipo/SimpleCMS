@@ -13,7 +13,7 @@
             <img src="{{asset('images/' . $post->image)}}" style="width: 100%" alt="">
             <h1>{{$post->headline}}</h1>
             <p class="text-justify">
-                {{$post->description}}
+                {!!$post->description!!}
                 <br>
             </p>
             <hr>

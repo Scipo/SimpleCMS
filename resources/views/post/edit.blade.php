@@ -62,7 +62,9 @@
         {!! Form::close() !!}
     </div>
 @endsection
-<script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
-<script>
-    CKEDITOR.replace( 'article-ckeditor' );
-</script>
+@section('script')
+    <script src="{{asset('vendor/unisharp/laravel-ckeditor/ckeditor.js')}}"></script>
+    <script>
+        CKEDITOR.replace( 'article-ckeditor' );
+    </script>
+@endsection

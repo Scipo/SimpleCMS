@@ -40,7 +40,7 @@
                             <th>{{$item->id}}</th>
                             <td><img src="{{asset('images/' . $item->image)}}" style="width: 120px" height="70px" alt=""></td>
                             <td><a href="post/{{$item->id}}">{{$item->headline}}</a></td>
-                            <td>{{ substr($item->description, 0, 25) }}{{ strlen($item->description) > 25 ? "..." : "" }}</td>
+                            <td>{!!substr($item->description, 0, 25)!!}{!!strlen($item->description) > 25 ? "..." : ""!!}</td>
                             <td>{{ date('M j, Y', strtotime($item->created_at)) }}</td>
                             <td>
                                 <a href="{{ route('post.show', $item->id) }}" class="btn btn-info btn-sm">View</a>
