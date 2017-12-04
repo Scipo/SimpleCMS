@@ -12,7 +12,7 @@ class PageController extends Controller
         //$post = Post::orderBy('created_at', 'desc')->limit(15)->get();
         //return view('pages.index')->withPost($post);
         $search = \Request::get('search');
-        $post = Post::where('headline', 'like','%' .$search .'%')->orderBy('created_at', 'desc')->paginate(10);
+        $post = Post::where('headline', 'like','%' .$search .'%')->orderBy('created_at', 'desc')->paginate(7);
         return view('pages.index')->withPost($post);
     }
 
