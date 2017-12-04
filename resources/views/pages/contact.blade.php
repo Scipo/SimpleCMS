@@ -1,5 +1,7 @@
 @extends('layout.applayout')
+@section('title')
 <title>{{$title}}</title>
+@endsection
 <link href="{{ asset('css/parsley.css') }}" rel="stylesheet">
 @section('content')
     <div class=row>
