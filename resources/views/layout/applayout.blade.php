@@ -5,7 +5,6 @@
         @include('includes.head')
         @yield('meta')
         @yield('css')
-
 </head>
 <body>
 <header>   @include('includes.header')</header>
