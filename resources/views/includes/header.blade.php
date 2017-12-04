@@ -12,7 +12,7 @@
                 </button>
 
                 <!-- Branding Image -->
-                <a class="navbar-brand" href="{{ url('/') }}">SEO test</a>
+                <a class="navbar-brand" href="{{ url('/') }}">Home SEO</a>
             </div>
            <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
