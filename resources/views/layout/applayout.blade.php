@@ -7,7 +7,7 @@
         @yield('css')
 </head>
 <body>
-<header>   @include('includes.header')</header>
+<header>@include('includes.header')</header>
 <div class="container">
         @include('includes.messages')
     @yield('content')
