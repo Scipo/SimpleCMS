@@ -18,6 +18,6 @@ Route::resource('post','PostController');
 Route::get('blog/{slug}',['as'=>'blog.single','uses'=>'BlogController@getSingle'])->where('slug','[\w\d\-\_]+');
 Route::resource('categories','CategoryController' ,['except'=> ['create']]);
 Auth::routes();
-//Route::resource('register', 'Auth\RegisterController@register', ['except'=> ['create']]);
+Route::resource('register', 'Auth\RegisterController@register', ['except'=> ['create']]);
 //Route::resource('queries', 'QueryController');
 
