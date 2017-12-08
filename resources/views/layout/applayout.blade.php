@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-        @yield('title')
-        @include('includes.head')
-        @yield('meta')
-        @yield('css')
+@yield('title')
+    @include('includes.head')
+@yield('meta')
+@yield('css')
 </head>
 <body>
 <header>@include('includes.header')</header>
