@@ -4,6 +4,7 @@
 @yield('title')
     @include('includes.head')
 @yield('meta')
+    @yield('meta-json')
 @yield('css')
 </head>
 <body>

@@ -6,6 +6,17 @@
 <meta name="keywords" content="{{$post->keywords}}">
 <meta name="description" content="{{$post->narration}}">
     @endsection
+@section('meta-json')
+    <script type="application/ld+json">
+{"@context":"http:\/\/schema.org","@type":"Article","mainEntityOfPage":
+{"@type":"WebPage","id":"http:\/\/technonews.uchenici.bg\/{{$post->slug}}\"}
+{"@type":"ImageObject","url":"http:\/\/technonews.uchenici.bg\/<img src="{{asset('images/' . $post->image)}}">","height":800,"width":400}},
+"headline":"{{$post->headline}}",
+"name":"{{$post->headline}}",
+"datePublished":"{{$post->created_at}}","dateModified":"{{$post->updated_at}}",
+"description":{{$post->narration}}"
+</script>
+@endsection
 @section('content')
 
     <div class="row">
