@@ -19,11 +19,11 @@
 		  "url":"http:technonews.uchenici.bg/{{asset('images/' . $post->image)}}",
 		  "height":800,"width":400
         },
-		"headline":"{{$post->headline}}",
-		"description":"{{$post->narration}}"
+		"headline":"{{{$post->headline}}}",
+		"description":"{{{$post->narration}}}"
       ],
-      "name":"{{$post->headline}}",
-      "datePublished":"{{$post->created_at}}","dateModified":"{{$post->updated_at}}",
+      "name":"{{{$post->headline}}}",
+      "datePublished":"{{{$post->created_at}}}","dateModified":"{{$post->updated_at}}}",
     }
     </script>
     /script>
