@@ -7,7 +7,7 @@
 <meta name="description" content="{{$post->narration}}">
     @endsection
 @section('meta-json')
-    <script type="application/ld+json">
+<script type="application/ld+json">
     {
       "@context": "http://schema.org",
       "@type": "Article",
@@ -26,7 +26,6 @@
       "datePublished":"{{{$post->created_at}}}","dateModified":"{{$post->updated_at}}}",
     }
     </script>
-    /script>
 @endsection
 @section('content')
 
