@@ -12,7 +12,10 @@
 */
 
 Route::get('/','PageController@index');
-Route::get('/contact','PageController@about');
+//SendMail
+Route::get('/contact','PageController@getContact');
+Route::post('/contact', 'PageController@postContact');
+//
 Route::get('/blog','PageController@blog');
 Route::resource('post','PostController');
 Route::get('blog/{slug}',['as'=>'blog.single','uses'=>'BlogController@getSingle'])->where('slug','[\w\d\-\_]+');
